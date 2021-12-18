@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: white;
+    color: black;
+  }
+  .header-ttl {
+    font-size: 24px;
+    width: 80px;
+  }
+  .header-nav-list {
+    display: flex;
+    font-weight: bold;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .top {
+    display: flex;
+    background: url(./css/img/mv.png)no-repeat;
+    background-size: cover;
+    height: 300px;
+    max-width: 100%;
+}
+.top__ttl {
+    font-size: 25px;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    color: white;
+}
+
+.service__contact {
+    color: #222;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-top: 80px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact__btn {
+    width: 150px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 700px;
+}
+@media  screen and (max-width: 768px) {
+    .contact__btn {
+        position: absolute;
+        left: 140px;
+    }
+}
+
+.blog__item {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__parent {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.blog__child img{
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.blog__content {
+  color: #000;
+  padding: 0 20px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .footer-ttl {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-nav-list {
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .footer-nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+  .footer-nav-item+ .footer-nav-item {
+    border-left: 1px solid white;
+    margin-left: 5px;
+  }
+
+ul {
+    list-style-type: none;
+}

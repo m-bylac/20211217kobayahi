@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>株式会社TECH</title>
+    <Link rel="stylesheet" href="../css/contact.css" />
+    <Link rel="stylesheet" href="restet.css" />
+    <meta name="discription" content="株式会社TECH公式サイト">
+    <script src="https://unpkg.com/dayjs"></script>
+    <script src="https://unpkg.com/dayjs@1.7.7/locale/ja.js"></script>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-ttl">
+          <a href="index.html">
+            TECH
+          </a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="index.html">ホーム</a></li>
+            <li class="header-nav-item"><a href="./css/service.html">事業内容</a></li>
+            <li class="header-nav-item"><a href="news.html">ニュース</a></li>
+            <li class="header-nav-item"><a href="blog.html">社員ブログ</a></li>
+            <li class="header-nav-item"><a href="company.html">会社概要</a></li>
+            <li class="header-nav-item"><a href="recruit.html">採用情報</a></li>
+            <li class="header-nav-item"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="top">
+        <p class="top__ttl"><strong>お問い合わせ</strong></p>
+    </div>
+      <main>
+        <div class="contact">
+          <form class="content-form" action="index.html" method="post">
+            <div class="contact-form-item">
+              <label class="contact-form-item-name" for="company">
+                会社名
+              </label>
+              <input type="text" id="company" class="contact-form-item-input">
+            </div>
+           <div class="contact-form-item">
+            <label for="contact-form-item-name" >
+              お名前
+            <span class="contact-form-item-mark">*</span></label>
+            <input type="text" id="name" class="contact-form-item-input" required>
+           </div>
+           <div class="contact-form-item">
+            <label for="contact-form-item-name" >
+              メールアドレス
+              <span class="contact-form-item-mark">*</span>
+            </label>
+            <input type="text" id="email" class="contact-form-item-input" required>
+           </div>
+           <div class="contact-form-item">
+            <label class="contact-form-item-name" for="comment">
+              お問い合わせ内容
+              <span class="contact-form-item-mark">*</span>
+            </label>
+            <textarea type="text" id="comment" rows="8" cols="80" class="contact-form-item-input" required></textarea>
+          </div>
+          <input type="submit" value="お申し込み" class="contact-form-submit">
+          </form>
+        </div>
+      </main>
+    <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-ttl">
+            <small class="copyright">
+                &copy; 2020 estra, inc
+              </small>
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="./css/service.html">事業内容</a></li>
+              <li class="footer-nav-item"><a href="news.html">ニュース</a></li>
+              <li class="footer-nav-item"><a href="blog.html">社員ブログ</a></li>
+              <li class="footer-nav-item"><a href="company.html">会社概要</a></li>
+              <li class="footer-nav-item"><a href="recruit.html">採用情報</a></li>
+              <li class="footer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
