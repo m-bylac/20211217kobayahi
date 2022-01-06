@@ -56,13 +56,16 @@ a{
   text-decoration: none;
   color: blue
 }
+.top {
+ 
+}
     .menu{
       display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
-    z-index: 10;
+    z-index: 20;
     }
 
     .header-nav-list {
@@ -110,6 +113,7 @@ a{
       left: -100%;
       background: white;
       transition: .7s;
+      z-index: 0;
       }
     .drawer-nav-list {
     text-align: center;
@@ -117,6 +121,7 @@ a{
     .drawer-nav-list, .drawer-nav-item{
       list-style-type: none;
       margin-top: 50px;
+      z-index: 20;
     }
     .top__ttl {
         font-size: 50px;
@@ -124,6 +129,7 @@ a{
         position: absolute;
         top: 200px;
         left: 20px;
+        z-index: 0;
     }
 }
 .top__subttl {
@@ -141,6 +147,7 @@ a{
     position: absolute;
     left: 190px;
     top: 400px;
+    z-index: 0;
   }
 }
 
@@ -358,6 +365,11 @@ span{
     }
     .top-blog-item img {
         width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .blog__parent {
+      flex-wrap: wrap;
     }
 }
 
@@ -386,6 +398,7 @@ span{
     .top-recruit-link {
         position: absolute;
         left: 380px;
+        z-index: -10;
     }
 }
 
