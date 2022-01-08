@@ -27,6 +27,7 @@ a {
   .top {
     display: flex;
     background: url(../html/css/img/mv.png)no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 300px;
     max-width: 100%;
@@ -40,10 +41,10 @@ a {
 }
 @media  screen and (max-width: 768px) {
   .top__ttl {
-    font-size: 35px;
-    position: absolute;
-    top: 200px;
-    left: 300px;
+    font-size: 30px;
+    
+    transform: translateY(-50%) translateX(-80%);
+      width: 200px;
 }
 }
 .contact {
@@ -68,7 +69,7 @@ a {
   height: 40px;
   background-color: black;
   color: #fff;
-  margin-left: 400px;
+  margin-left: 350px;
 }
 @media  screen and (max-width: 768px) {
   .contact-form-submit {
@@ -76,7 +77,7 @@ a {
     height: 40px;
     background-color: black;
     color: #fff;
-    margin-left: 150px;
+    margin-right: 200px;
   }
 }
 .footer {
@@ -139,6 +140,9 @@ a{
     .header-nav-list {
       display: none;
     }
+    .header-nav{
+      display: none;
+    }
     .menu.open span:nth-of-type(1) {
       top: 14px;
       transform: rotate(45deg);
@@ -189,4 +193,27 @@ a{
       list-style-type: none;
       margin-top: 50px;
     }
+}
+@media  screen and (max-width: 1024px) {
+  .contact__btn{
+    position: absolute;
+        left: 450px;
+  }
+  .top__ttl{
+    position: absolute;
+    top: 200px;
+    left: 450px;
+  }
+  .header-nav-list {
+    display: flex;
+    font-weight: bold;
+    padding: 0 5px 0 170px;
+  }
+  .contact-form-submit {
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    margin-left: 200px;
+  }
 }

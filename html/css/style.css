@@ -35,6 +35,7 @@ a {
 .top {
     display: flex;
     background: url(../css/img/mv.png)no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 500px;
     max-width: 100%;
@@ -51,14 +52,14 @@ a {
 .drawer-nav{
   display: none;
 }
-@media  screen and (max-width: 768px) {   
+
+@media  screen and (max-width: 768px) {
+  
 a{
   text-decoration: none;
   color: blue
 }
-.top {
- 
-}
+
     .menu{
       display: inline-block;
     width: 36px;
@@ -132,6 +133,26 @@ a{
         z-index: 0;
     }
 }
+@media  screen and (max-width: 1024px) {
+  .top__ttl {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+  .top__subttl {
+    margin: 20px 0 20px -200px;
+    width: 500px;
+  }
+  .news__btn {
+    margin-left: -420px;
+  }
+  .top-recruit-link {
+    margin-left: -250px;
+}
+}
 .top__subttl {
     color: white;
     font-size: 20px;
@@ -145,8 +166,8 @@ a{
     text-align: center;
     font-weight: bold;
     position: absolute;
-    left: 190px;
-    top: 400px;
+    left: 350px;
+    top: 450px;
     z-index: 0;
   }
 }
@@ -218,8 +239,24 @@ a{
       flex-wrap: wrap;
       align-content: flex-start;
     }
+    a.btn_02_a {
+      align-items: center;
+    }
   }
-
+  @media  screen and (max-width: 1024px) {
+    a.btn_02_a {
+      position: absolute;
+      right: 400px;
+  }
+  
+.news__main {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: -400px;
+  width: 100px;
+}
+  }
+  
 section {
     max-width: 300px;
     margin: 0 auto;
@@ -234,6 +271,10 @@ a.btn_02_a {
     text-align: center;
     text-decoration: none;
     transition-duration: 0.3s;
+    margin-top: -500px;
+    margin-left: 650px;
+    margin-bottom: 50px;
+    width: 200px;
 }
 
 a.btn_02_a .look {
@@ -249,7 +290,6 @@ a.btn_02_a .look {
     padding: 30px 0 30px 20px;
 }
 .news__ttl {
-    
     margin-top: 60px;
     margin-left: 60px;
     color: white;
@@ -301,11 +341,12 @@ span{
     padding: 10px;
     position: absolute;
     left: 1160px;
-    top: 2450px;
+    top: 2240px;
 }
 
 .top-blog-ttl{
     text-align: center;
+    margin-top: 50px
 }
 
 .blog__item {
@@ -353,11 +394,12 @@ span{
     .news__main {
         padding: 10px;
         font-size: 14px;
+        margin-top: -300px;
     }
     .news__btn {
         position: absolute;
-        left: 500px;
-        top: 3430px;
+        left: 950px;
+        top: 3300px;
     }
     .top-blog-item {
         width: 100%;
@@ -382,6 +424,7 @@ span{
 }
 .top-company-item {
     width: 50%;
+    display: flex;
 }
 .top-company-link {
     background-color: red;
@@ -396,8 +439,8 @@ span{
 }
 @media  screen and (max-width: 768px){
     .top-recruit-link {
-        position: absolute;
-        left: 380px;
+      position: absolute;
+      left: 630px;
         z-index: -10;
     }
 }
@@ -414,7 +457,9 @@ span{
     display: inline-block;
     text-align: center;
 }
-
+.content__ttl {
+  margin-top: 50px;
+}
 .contact__btn {
     width: 150px;
     font-size: 15px;
@@ -422,14 +467,13 @@ span{
     color: white;
     text-align: center;
     align-items: center;
-    position: absolute;
-    left: 700px;
+    margin: 40px auto 0;
 }
 @media  screen and (max-width: 768px) {
-    .contact__btn {
-        position: absolute;
-        left: 300px;
-    }
+  .top-company-item {
+    width: 50%;
+    display: flex;
+}
 }
 
 
